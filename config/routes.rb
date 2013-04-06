@@ -1,5 +1,7 @@
 SampleApp::Application.routes.draw do
-  get "users/new"
+  resources :users
+  #get "users/new" not needed because of resources :users
+
 
   root to: 'static_pages#home'
 
