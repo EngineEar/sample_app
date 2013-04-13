@@ -3,7 +3,7 @@
   		<ul>
 		  	<li><a href="http://railstutorial.org/">Rails Tutorial</a>
 		    	by Michael Hartl</li>
-		  	<li>Remote IP: <%= request.remote_ip() if Rails.env.development? %></li>
+		  	<li>Remote IP: <%= request.remote_ip() %></li>
 		  	<li>Server Software: <%= request.server_software().upcase %></li> 
 		</ul>
 	</small>
