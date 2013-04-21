@@ -2,6 +2,7 @@ SampleApp::Application.routes.draw do
   resources :users
   #get "users/new" not needed because of resources :users
   resources :sessions, only: [:new, :create, :destroy]
+  resources :microposts, only: [:create, :destroy]
 
   root to: 'static_pages#home'
 
